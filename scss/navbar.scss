@@ -1,0 +1,28 @@
+nav {
+    width: 100%;
+    height: 55px;
+    background-color: #777777;
+    border: double 5px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a  {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 22px;
+    
+        //  {
+              // color: blue;
+              // text-transform: uppercase;
+              a:hover {
+                background-color: blue;
+                text-transform: uppercase;
+              }
+            }     
+    }
+
+
+

@@ -1,0 +1,91 @@
+.header-home {
+    width: 100%;
+    height: 200px;
+    display: flex;  
+    justify-content: space-between;
+    background-color: #4682B4;
+    margin-bottom: 6px;
+
+    .logo-home {
+        width: 200px;
+        height: 200px;
+        background-image: url(../images/home200.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .head-content-home {
+        height: 200px;
+        width: 200px;
+        margin-right: 10px;
+        background-image: url(../images/home200\ \(2\).png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.home-wrapper {
+    width: 100%;
+    height: auto;
+    // background-color: #EFDECD;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+        width: 60%;
+        height: auto;
+        border: 3px solid #4682B4;
+        p {
+        font-family: "dinosaur", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        margin-left: 10px;
+        text-overflow: ellipsis;
+        }
+    }
+    .right {
+       width: 40%;
+       height: 460px;
+       margin-right: -5px;
+       background-image: url(../images/censusPic\ profile\ pic.jpg);
+       background-position: center;
+       background-size: contain;
+       background-repeat: no-repeat;
+       
+    }
+}
+.footer-index {
+    width: 100%;
+    height: 55px;
+    background-color: #777777;
+    border: double 5px #ffffff;
+    margin-top: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+    .home-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .left {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+    
+    
+    .right {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }
+  
