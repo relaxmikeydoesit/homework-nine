@@ -1,0 +1,514 @@
+@import "styles.css";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  height: 100%;
+  padding: 8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  width: 100%;
+  height: 55px;
+  background-color: #777777;
+  border: double 5px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+}
+nav a a:hover {
+  background-color: blue;
+  text-transform: uppercase;
+}
+
+.grid .col-1 {
+  width: 8.33%;
+}
+.grid .col-2 {
+  width: 16.66%;
+}
+.grid .col-3 {
+  width: 25%;
+}
+.grid .col-4 {
+  width: 33.33%;
+}
+.grid .col-5 {
+  width: 41.66%;
+}
+.grid .col-6 {
+  width: 50%;
+}
+.grid .col-7 {
+  width: 58.33%;
+}
+.grid .col-8 {
+  width: 66.66%;
+}
+.grid .col-9 {
+  width: 75%;
+}
+.grid .col-10 {
+  width: 83.33%;
+}
+.grid .col-11 {
+  width: 91.66%;
+}
+.grid .col-12 {
+  width: 100%;
+}
+.grid [class*=col-] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.header-home {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #4682B4;
+  margin-bottom: 6px;
+}
+.header-home .logo-home {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/home200.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-home .head-content-home {
+  height: 200px;
+  width: 200px;
+  margin-right: 10px;
+  background-image: url(../images/home200\ \(2\).png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-wrapper {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home-wrapper .left {
+  width: 60%;
+  height: auto;
+  border: 3px solid #4682B4;
+}
+.home-wrapper .left p {
+  font-family: "dinosaur", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  margin-left: 10px;
+  text-overflow: ellipsis;
+}
+.home-wrapper .right {
+  width: 40%;
+  height: 460px;
+  margin-right: -5px;
+  background-image: url(../images/censusPic\ profile\ pic.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer-index {
+  width: 100%;
+  height: 55px;
+  background-color: #777777;
+  border: double 5px #ffffff;
+  margin-top: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+  .home-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .left {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .right {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
+.header-resume {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0BE8E8;
+  margin-bottom: 6px;
+}
+.header-resume .logo-resume {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/resume200.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-resume .head-content-resume {
+  height: 200px;
+  width: 200px;
+  background-image: url(../images/resume200\ \(2\).png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.wrapper-resume {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper-resume .resume {
+  width: 660px;
+  height: 880px;
+  margin-left: 12px;
+  background-image: url(../images/Michael\ Lee\ -\ Marketing\ Specialist\ Intern\ Resume.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 3px #deb887;
+}
+.wrapper-resume .side-panel {
+  width: 268px;
+  height: auto;
+  border: solid 3px #0BE8E8;
+  font-family: "dinosaur", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 6px;
+}
+
+.footer-resume {
+  width: 100%;
+  height: 55px;
+  background-color: #777777;
+  border: double 5px #4682B4;
+  margin-top: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+  .wrapper-resume {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .resume {
+    margin-bottom: 12px;
+  }
+  .side-panel {
+    width: 660px;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}
+.header {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FF914D;
+  margin-bottom: 6px;
+}
+.header .logo-contact {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/contact200x200.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .head-content-contact {
+  height: 200px;
+  width: 200px;
+  background-image: url(../images/contact-header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.top p {
+  font-family: "cora";
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left {
+  width: 50%;
+  height: 620px;
+  border: solid 3px #FF914d;
+  font-family: "dinosaur", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  margin-top: 10px;
+  padding: 6px;
+}
+
+.right {
+  width: 45%;
+  height: 620px;
+  background-image: url(../images/contact-image.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer-contact {
+  width: 100%;
+  height: 55px;
+  background-color: #777777;
+  border: double 5px #ffffff;
+  margin-top: 16px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.works-wrapper {
+  width: 100%;
+  height: 620px;
+  background-color: navy;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.works-wrapper .top-post {
+  width: 885px;
+  height: 546px;
+  background-image: url(../images/top-post.JPG);
+}
+
+.dfw-intro {
+  width: 100%;
+  height: 320px;
+  background-image: url(../images/dfw-airport-signage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 25px auto;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.overlay {
+  margin-top: 20px;
+  padding-left: 35px;
+  background-color: antiquewhite;
+  width: 400px;
+  height: 200px;
+}
+.overlay h1 {
+  color: darkslategray;
+}
+.overlay h1 p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #000000;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.works-middle-wrapper {
+  background-color: #000000;
+  max-height: 2500PX;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+.works-middle-wrapper img {
+  width: 70%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+footer {
+  width: 100%;
+  height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -6px;
+  background-color: #010080;
+}
+footer .logo {
+  width: 125px;
+  height: 125px;
+  background-image: url(../images/works-footer.png);
+}
+footer .copy {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+footer .social img {
+  width: 100px;
+  height: 100px;
+  padding-right: 12px;
+}
+
+.sidebar {
+  width: 250px;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 6px;
+  background-color: #010080;
+}
+footer .logo {
+  width: 125px;
+  height: 125px;
+  background-image: url(../images/works-footer.png);
+}
+footer .copy {
+  font-size: 20px;
+  color: #ffffff;
+}
+footer .contact {
+  margin-right: 10px;
+}
+footer .contact p {
+  font-size: 20px;
+  color: #ffffff;
+}
